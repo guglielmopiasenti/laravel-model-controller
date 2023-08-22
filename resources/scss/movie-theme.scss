@@ -7,15 +7,27 @@
 }
 
 .card.movie-card {
-  background-color: $dark;
+  background-color: darken($dark, 5%); 
   color: $white;
+  border: 1px solid $dark;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+  .card-body {
+      padding: 1.5em;
+  }
+
   .card-title {
       font-size: 1.2em;
+      margin-bottom: 0.5em;
   }
+
   .card-subtitle {
       font-size: 1em;
-      color: $gray-500; 
+      color: lightgoldenrodyellow !important;
+      margin-bottom: 0.5em;
   }
+
   .card-text {
       font-size: 0.9em;
   }
